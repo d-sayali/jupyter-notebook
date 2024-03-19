@@ -22,7 +22,7 @@ for launch_site in spacex_df['Launch Site'].unique().tolist():
 
 
 # Create an app layout
-app.layout = html.Div(children=[html.H1('SpaceX Launch Records Dashboard',
+app.layout = html.Div(style={'width': '60vw', 'textAlign': 'center', 'margin':'auto'}, children=[html.H1('SpaceX Launch Records Dashboard',
                                         style={'textAlign': 'center', 'color': '#503D36',
                                                'font-size': 40}),
                                 # TASK 1: Add a dropdown list to enable Launch Site selection
